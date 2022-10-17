@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "MIMode": "gdb",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "miDebuggerPath": "D:\\portable\\Msys2\\ucrt64\\bin\\gdb.exe",
+      "name": "Debug",
+      "preLaunchTask": "single file build",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "request": "launch",
+      "stopAtEntry": false,
+      "type": "cppdbg"
+    }
+  ],
+  "version": "0.2.0"
+}
