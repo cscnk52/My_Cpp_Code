@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "compilerPath": "D:\\portable\\Msys2\\ucrt64\\bin\\g++.exe",
+      "compilerPath": "D:\\portable\\Msys2\\mingw64\\bin\\gcc.exe",
       "cppStandard": "c++23",
       "includePath": [
         "${{workspaceFolder}}/**"
