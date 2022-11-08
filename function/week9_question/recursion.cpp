@@ -11,7 +11,7 @@ int solve()
         for (int j = 1; j < n; j += i)
         {
             status = 1;
-            for (int k = j - 1; k < j + i - 2; k++)
+            for (int k = j - 1; k < j + i - 2 && status; k++)
                 status &= (num[k] <= num[k + 1]);
             if (status)
                 return i;
