@@ -1,19 +1,21 @@
 #include <iostream>
 #include <algorithm>
+#include <vector>
 using namespace std;
-int n, a[20];
+vector<int> num;
 int func(int l, int r)
 {
-    if (is_sorted(a + l, a + r + 1))
+    if (is_sorted(num.begin() + l - 1, num.begin() + r))
         return r - l + 1;
-    int mid = l + r >> 1;
+    int mid = (l + r) >> 1;
     return max(func(l, mid), func(mid + 1, r));
 }
 int main()
 {
+    int temp, n;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
-        scanf("%d", a + i);
+    while (~scanf("%d", &temp))
+        num.push_back(temp);
     printf("%d\n", func(1, n));
     return 0;
 }
