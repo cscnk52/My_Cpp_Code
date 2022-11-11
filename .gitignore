@@ -5,3 +5,10 @@ test.cpp
 test.c
 main.cpp
 main.c
+# latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.synctex.gz
