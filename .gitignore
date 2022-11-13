@@ -12,3 +12,4 @@ main.c
 *.log
 *.pdf
 *.synctex.gz
+default.md
