@@ -13,3 +13,5 @@ main.c
 *.pdf
 *.synctex.gz
 default.md
+# cph
+.cph
