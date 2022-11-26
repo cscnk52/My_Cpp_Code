@@ -1,31 +1,24 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-constexpr long long int MOD = 1e9+7,N = 1e5+5;
-struct wwt
-{
+constexpr long long int MOD = 1e9 + 7, N = 1e5 + 5;
+struct wwt {
     long long int hard;
     long long int encourage;
 }wt[N];
-bool cmp(const wwt&a,const wwt&b)
-{
+bool cmp(const wwt& a, const wwt& b) {
     return b.hard * (a.hard + a.encourage) + b.encourage > a.hard * (b.hard + b.encourage) + a.encourage;
 }
-void pre(long long int t)
-{
-    for(long long int i = 0;i < t;i++)
-    {
+void pre(long long int t) {
+    for (long long int i = 0;i < t;i++) {
         cin >> wt[i].hard >> wt[i].encourage;
     }
-    sort(wt,wt+t,cmp);
+    sort(wt, wt + t, cmp);
 }
-long long fastTimes(long long x,long long y,long long z,long long mod)
-{
+long long fastTimes(long long x, long long y, long long z, long long mod) {
     long long ans = 0;
-    while(y)
-    {
-        if(y & 1)
-        {
+    while (y) {
+        if (y & 1) {
             ans = (ans + x) % mod;
         }
         x = x * 2 % mod;
@@ -34,22 +27,18 @@ long long fastTimes(long long x,long long y,long long z,long long mod)
     ans = (ans + z) % mod;
     return ans;
 }
-void solve(long long int sum,long long int T)
-{
-    for(long long int i = 0;i < T;i++)
-    {
-        sum = fastTimes(sum,wt[i].hard % MOD,wt[i].encourage,MOD);
+void solve(long long int sum, long long int T) {
+    for (long long int i = 0;i < T;i++) {
+        sum = fastTimes(sum, wt[i].hard % MOD, wt[i].encourage, MOD);
     }
-    printf("%lld\n",sum);
+    printf("%lld\n", sum);
 }
-int main()
-{
+int main() {
     long long int T = 0;
-    while(~scanf("%lld",&T))
-    {
+    while (~scanf("%lld", &T)) {
         pre(T);
         long long int sum = 1;
-        solve(sum,T);
+        solve(sum, T);
     }
     return 0;
 }
