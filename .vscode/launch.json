@@ -6,7 +6,7 @@
       "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": false,
-      "miDebuggerPath": "D:\\portable\\Scoop\\apps\\msys2\\current\\mingw64\\bin\\gdb.exe",
+      "miDebuggerPath": "D:\\portable\\msys2\\mingw64\\bin\\gdb.exe",
       "name": "Debug",
       "preLaunchTask": "single file build",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",

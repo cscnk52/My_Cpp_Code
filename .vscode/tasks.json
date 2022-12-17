@@ -1,7 +1,7 @@
 {
   "options": {
     "env": {
-      "Path": "D:\\portable\\Scoop\\apps\\msys2\\current\\mingw64\\bin;${env:Path}"
+      "Path": "D:\\portable\\msys2\\mingw64\\bin;${env:Path}"
     }
   },
   "tasks": [
@@ -13,7 +13,7 @@
         "${fileDirname}\\${fileBasenameNoExtension}.exe",
         "-std=c++23"
       ],
-      "command": "D:\\portable\\Scoop\\apps\\msys2\\current\\mingw64\\bin\\g++.exe",
+      "command": "D:\\portable\\msys2\\mingw64\\bin\\g++.exe",
       "group": {
         "isDefault": true,
         "kind": "build"
