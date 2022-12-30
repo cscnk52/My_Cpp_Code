@@ -4,7 +4,7 @@
 
 using namespace std;
 int main() {
-    int n,temp;
+    int n, temp;
     scanf("%d", &n);
     vector<int> num[n];
     for (int i = 0;i < n;i++) {
@@ -14,7 +14,7 @@ int main() {
         }
     }
     for (int i = 0;i < n;i++) {
-        printf("%d%c", *max_element(num[i].begin(), num[i].end()),i==n-1?'\n':',');
+        printf("%d%c", *max_element(num[i].begin(), num[i].end()), i == n - 1 ? '\n' : ',');
     }
     return 0;
 }

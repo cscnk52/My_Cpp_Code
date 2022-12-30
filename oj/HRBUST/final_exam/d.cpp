@@ -29,7 +29,7 @@ string judge(ball ball1, ball ball2) {
     if (distance > ball1.get_r() + ball2.get_r()) {
         return "disjoint";
     }
-    else{
+    else {
         return "intersectant";
     }
 }

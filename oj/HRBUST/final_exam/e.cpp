@@ -3,19 +3,18 @@
 using namespace std;
 int main() {
     char ch;
-    string str,temp;
+    string str, temp;
     int sum;
     double num_sum;
     while (~scanf("%c", &ch)) {
-        switch (ch)
-        {
+        switch (ch) {
         case 'A':
             num_sum = 0;
             getchar();
             getline(cin, str);
             for (int i = 0;i < (int)str.length();i++) {
                 if (isdigit(str[i])) {
-                    while ((isdigit(str[i])||str[i]=='.')) {
+                    while ((isdigit(str[i]) || str[i] == '.')) {
                         temp += str[i];
                         i++;
                     }
